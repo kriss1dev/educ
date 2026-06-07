@@ -1,0 +1,1024 @@
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+    --green:#0B7A2B;
+    --yellow:#FFD400;
+    --red:#E61E24;
+    --dark:#222;
+    --light:#f7f7f7;
+    --white:#ffffff;
+}
+
+/* ==========================================
+   GENERAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+     background:linear-gradient(
+        120deg,
+        #2ff12875,
+        #f3ef2044,
+        #fa12124d
+    );
+    color:var(--dark);
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+
+.logo{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background: linear-gradient(160deg, #0B7A2B 0%, #0B7A2B 70%, #FFD400 70%, #E61E24 100%);
+box-shadow:0 2px 10px rgba(0, 0, 0, 0.473);
+border-radius: 70px 70px 70px 70px;
+margin: 1%;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    transition: .3s;
+    align-items: center;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(3, 243, 3);
+
+}
+
+.a-btn{
+    background-color: #0B7A2B;
+}
+
+.navbar li{
+margin-left:20px;
+}
+
+.navbar a{
+text-decoration:none;
+font-weight:bold;
+color: rgb(250, 248, 248);
+}
+
+
+.hero{
+
+padding-top:140px;
+padding-bottom:100px;
+background: linear-gradient(160deg, #0B7A2B 0%, #0B7A2B 40%, #FFD400 65%, #ff0000 100%);
+}
+
+.hero h1{
+font-size:4.5rem;
+font-weight:800;
+color:white;
+line-height:1.1;
+}
+
+.yellow{
+color:#FFD400;
+}
+
+.hero p{
+font-size:1.2rem;
+color:white;
+margin:25px 0;
+}
+
+.hero-img{
+border-radius:30px;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* FEATURES */
+
+.features-section{
+margin-top:-60px;
+position:relative;
+z-index:20;
+}
+
+.feature-card{
+background:rgba(255, 253, 251, 0.884);
+padding:30px;
+border-radius:20px;
+box-shadow:10px 10px 30px rgba(0, 0, 0, 0.644);
+text-align:center;
+height:100%;
+}
+
+.feature-icon{
+font-size:50px;
+margin-bottom:20px;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f4fff5 100%
+    );
+}
+
+.hero .container{
+    position:relative;
+    z-index:5;
+}
+
+.hero-tag{
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(11,122,43,.1);
+
+    color:var(--green);
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:900;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    color:var(--green);
+}
+
+.hero h1 span{
+    color:var(--red);
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.hero-img{
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+    transition:.5s;
+}
+
+.hero-img:hover{
+    transform:scale(1.03);
+}
+
+/* ==========================================
+   HERO ICONS
+========================================== */
+
+.hero-icons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.hero-icons div{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#fff;
+
+    padding:15px 20px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.07);
+
+    font-weight:600;
+}
+
+.hero-icons i{
+    color:var(--green);
+    font-size:1.4rem;
+}
+
+/* ==========================================
+   SHAPES
+========================================== */
+
+.hero-shape-green,
+.hero-shape-yellow,
+.hero-shape-red{
+    position:absolute;
+    border-radius:50%;
+    z-index:1;
+}
+
+.hero-shape-green{
+
+    width:450px;
+    height:450px;
+
+    background:var(--green);
+
+    top:-150px;
+    right:-150px;
+}
+
+.hero-shape-yellow{
+
+    width:300px;
+    height:300px;
+
+    background:var(--yellow);
+
+    top:100px;
+    right:-120px;
+}
+
+.hero-shape-red{
+
+    width:250px;
+    height:250px;
+
+    background:var(--red);
+
+    bottom:-100px;
+    right:-100px;
+}
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.8rem;
+    font-weight:800;
+    color:var(--green);
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* ==========================================
+   CONTEST SECTION
+========================================== */
+
+.contest-section{
+    padding:100px 0;
+}
+
+.contest-card{
+
+    position:relative;
+
+    background:#f5f3f323;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    height:100%;
+
+    transition:.4s;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.contest-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.15);
+}
+
+.contest-card img{
+
+    width:100%;
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.contest-card:hover img{
+    transform:scale(1.05);
+}
+
+.contest-body{
+    padding:25px;
+}
+
+.contest-body h3{
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.contest-body p{
+    color:#666;
+}
+
+/* ==========================================
+   TITRES COLORES
+========================================== */
+
+.green-text{
+    color: rgb(0, 255, 64);
+}
+
+.yellow-text{
+    color:#d6a700;
+}
+
+.red-text{
+    color:var(--red);
+}
+
+/* ==========================================
+   BADGES NUMEROTES
+========================================== */
+
+.floating-number{
+
+    position:absolute;
+
+    top:-20px;
+    left:25px;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:1.3rem;
+    font-weight:800;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.15);
+
+    z-index:10;
+}
+
+.green-bg{
+    background:var(--green);
+    color:white;
+}
+
+.yellow-bg{
+    background:var(--yellow);
+    color:black;
+}
+
+.red-bg{
+    background:var(--red);
+    color:white;
+}
+
+/* ==========================================
+   PARTICIPATION
+========================================== */
+
+.participate{
+    padding:100px 0;
+}
+
+.info-box{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+}
+
+.info-box i{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.info-box h3{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.info-box p,
+.info-box li{
+    color:#555;
+}
+
+.green-box{
+    background:var(--green);
+    color:white;
+}
+
+.green-box p,
+.green-box li{
+    color:white;
+}
+
+.green-box ul{
+    padding-left:20px;
+}
+
+/* ==========================================
+   STATISTIQUES
+========================================== */
+
+.stats-section{
+
+    background:var(--green);
+
+    padding:90px 0;
+
+    color:white;
+}
+
+.stats-section h2{
+
+    font-size:4rem;
+
+    font-weight:900;
+}
+
+.stats-section p{
+
+    font-size:1.1rem;
+
+    margin-top:10px;
+}
+
+/* ==========================================
+   PROCESS SECTION
+========================================== */
+
+.process-section{
+    padding:100px 0;
+    background:linear-gradient(
+        120deg,
+        #f0ee85,
+        #e29090
+    );
+}
+
+.step-card{
+
+    background:#fff;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.4s;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+}
+
+.step-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 45px rgba(0,0,0,.15);
+}
+
+.step-number{
+
+    width:70px;
+    height:70px;
+
+    margin:auto auto 25px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    color:white;
+
+    font-size:1.8rem;
+    font-weight:800;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.step-card h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.step-card p{
+    color:#666;
+}
+
+/* ==========================================
+   REWARDS SECTION
+========================================== */
+
+.rewards-section{
+
+    padding:100px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8fff8,
+        #ffffff
+    );
+}
+
+.rewards-section img{
+
+    max-width:420px;
+
+    margin:auto;
+
+    transition:.5s;
+}
+
+.rewards-section img:hover{
+    transform:scale(1.05);
+}
+
+.rewards-section h2{
+
+    color:var(--green);
+
+    font-size:2.8rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+}
+
+.rewards-section p{
+
+    color:#555;
+
+    margin-bottom:25px;
+}
+
+.reward-list{
+
+    list-style:none;
+
+    padding-left:0;
+}
+
+.reward-list li{
+
+    background:white;
+
+    margin-bottom:15px;
+
+    padding:15px 20px;
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+}
+
+/* ==========================================
+   FORMULAIRE
+========================================== */
+
+.registration{
+    padding:100px 0;
+}
+
+.register-card{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    border-top:6px solid var(--red);
+}
+
+.register-card h2{
+
+    color:var(--green);
+
+    font-weight:800;
+}
+
+.form-control,
+.form-select{
+
+    height:55px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+}
+
+textarea.form-control{
+
+    height:auto;
+
+    min-height:140px;
+
+    resize:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:var(--green);
+
+    box-shadow:
+    0 0 0 4px rgba(11,122,43,.15);
+}
+
+.btn-success{
+
+    background:var(--green);
+
+    border:none;
+
+    height:55px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-success:hover{
+
+    background:#086122;
+
+    transform:translateY(-2px);
+}
+
+/* ==========================================
+   GALLERY
+========================================== */
+
+.gallery-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+}
+
+.gallery-img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.5s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.gallery-img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   CTA BANNER
+========================================== */
+
+.cta-banner{
+
+    background:var(--yellow);
+
+    padding:70px 0;
+
+    text-align:center;
+}
+
+.cta-banner h2{
+
+    color:var(--green);
+
+    font-size:2.5rem;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+}
+
+.cta-banner p{
+
+    color:#333;
+
+    font-size:1.1rem;
+
+    margin-bottom:25px;
+}
+
+.cta-banner .btn{
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:var(--green);
+
+    color:white;
+
+    padding:80px 0 30px;
+}
+
+.footer h4,
+.footer h5{
+
+    font-weight:800;
+
+    margin-bottom:20px;
+}
+
+.footer p{
+
+    color:rgba(255,255,255,.9);
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding-left:0;
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+    transition:.3s;
+}
+
+.footer-links li:hover{
+
+    padding-left:8px;
+}
+
+.footer hr{
+
+    margin:40px 0 20px;
+
+    border-color:
+    rgba(255,255,255,.2);
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+.hero,
+.contest-card,
+.info-box,
+.step-card,
+.register-card{
+
+    animation:
+    fadeUp .8s ease;
+}
+
+/* ==========================================
+   TABLETTE
+========================================== */
+
+@media (max-width:992px){
+
+    .hero{
+
+        text-align:center;
+    }
+
+    .hero-icons{
+
+        justify-content:center;
+    }
+
+    .hero h1{
+
+        font-size:3.8rem;
+    }
+
+    .rewards-section img{
+
+        margin-bottom:40px;
+    }
+
+    .stats-section h2{
+
+        font-size:3rem;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .hero{
+
+        padding:80px 0;
+    }
+
+    .hero h1{
+
+        font-size:2.8rem;
+    }
+
+    .hero-icons{
+
+        flex-direction:column;
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+    }
+
+    .stats-section h2{
+
+        font-size:2.5rem;
+    }
+
+    .cta-banner h2{
+
+        font-size:1.8rem;
+    }
+
+    .register-card{
+
+        padding:30px;
+    }
+
+    .gallery-img{
+
+        height:220px;
+    }
+
+    .footer{
+
+        text-align:center;
+    }
+}
+
+/* ==========================================
+   PETITS SMARTPHONES
+========================================== */
+
+@media (max-width:576px){
+
+    .hero h1{
+
+        font-size:2.2rem;
+    }
+
+    .hero-tag{
+
+        font-size:.85rem;
+    }
+
+    .floating-number{
+
+        width:50px;
+        height:50px;
+
+        font-size:1rem;
+    }
+
+    .step-number{
+
+        width:60px;
+        height:60px;
+
+        font-size:1.4rem;
+    }
+
+    .cta-banner{
+
+        padding:50px 15px;
+    }
+}
